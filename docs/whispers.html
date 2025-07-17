@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CandleFrame - Whispers</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #fcebd2;
+      font-family: 'Georgia', serif;
+      padding: 3rem;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p.description {
+      font-style: italic;
+      color: #d0c7be;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .whisper-card {
+      background-color: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      padding: 1.5rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .whisper-card:hover {
+      background-color: #2b2b2b;
+    }
+
+    .whisper-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fcebd2;
+    }
+
+    .whisper-summary {
+      font-size: 0.95rem;
+      color: #c3b8aa;
+    }
+
+    .back-button {
+      display: block;
+      margin: 3rem auto 1rem auto;
+      text-align: center;
+      padding: 0.6rem 1.2rem;
+      background-color: transparent;
+      border: 1px solid #fcebd2;
+      color: #fcebd2;
+      font-size: 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      width: fit-content;
+    }
+
+    .back-button:hover {
+      background-color: #fcebd2;
+      color: #0c0c0c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Whispers</h1>
+  <p class="description">Things not shouted. Things said with breath. Things not meant for the world, only for you.</p>
+
+  <div class="grid">
+    <div class="whisper-card">
+      <div class="whisper-title">Say It Again</div>
+      <div class="whisper-summary">The words she asked for weren’t dirty. They were sacred. She needed to hear them fall from my mouth, again and again.</div>
+    </div>
+
+    <div class="whisper-card">
+      <div class="whisper-title">Midnight Confession</div>
+      <div class="whisper-summary">He waited until I was half-asleep to say it: what he wanted. What he dreamed. What he feared I’d say no to.</div>
+    </div>
+
+    <div class="whisper-card">
+      <div class="whisper-title">The Name</div>
+      <div class="whisper-summary">It wasn’t mine. It wasn’t hers. It was what we called each other when the lights were low and the world forgot us.</div>
+    </div>
+
+    <!-- Add more whisper-cards as your breath finds voice -->
+  </div>
+
+  <a href="index.html" class="back-button">← Back to CandleFrame</a>
+</body>
+</html>

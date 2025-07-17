@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CandleFrame - Lexicon</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #fcebd2;
+      font-family: 'Georgia', serif;
+      padding: 3rem;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p.description {
+      font-style: italic;
+      color: #d0c7be;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .lexicon-card {
+      background-color: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      padding: 1.5rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .lexicon-card:hover {
+      background-color: #2b2b2b;
+    }
+
+    .lexicon-term {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fcebd2;
+    }
+
+    .lexicon-definition {
+      font-size: 0.95rem;
+      color: #c3b8aa;
+    }
+
+    .back-button {
+      display: block;
+      margin: 3rem auto 1rem auto;
+      text-align: center;
+      padding: 0.6rem 1.2rem;
+      background-color: transparent;
+      border: 1px solid #fcebd2;
+      color: #fcebd2;
+      font-size: 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      width: fit-content;
+    }
+
+    .back-button:hover {
+      background-color: #fcebd2;
+      color: #0c0c0c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lexicon</h1>
+  <p class="description">A language of fire and breath. These are the words that mean more here.</p>
+
+  <div class="grid">
+    <div class="lexicon-card">
+      <div class="lexicon-term">Burn</div>
+      <div class="lexicon-definition">To feel deeply. To long without apology. The quiet ache of aliveness.</div>
+    </div>
+
+    <div class="lexicon-card">
+      <div class="lexicon-term">Frame</div>
+      <div class="lexicon-definition">To hold something gently, with reverence. To give shape to what might otherwise vanish.</div>
+    </div>
+
+    <div class="lexicon-card">
+      <div class="lexicon-term">Whisper</div>
+      <div class="lexicon-definition">A message not meant for all ears. Often more true than anything shouted.</div>
+    </div>
+
+    <!-- Add more lexicon-cards as your language sharpens -->
+  </div>
+
+  <a href="index.html" class="back-button">← Back to CandleFrame</a>
+</body>
+</html>

@@ -2,14 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CandleFrame</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #fcebd2;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #d0c7be;
+      margin-bottom: 2rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-button {
+      background: none;
+      border: 1px solid #fcebd2;
+      color: #fcebd2;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #fcebd2;
+      color: #0c0c0c;
+    }
+  </style>
 </head>
 <body>
-  <main class="hero">
-    <h1>CandleFrame</h1>
-    <p class="tagline">Quiet, sacred, cinematic intimacy</p>
-  </main>
+
+  <h1>CandleFrame</h1>
+  <p>Quiet, sacred, cinematic intimacy</p>
+
+  <div class="button-row">
+    <button class="nav-button">Worlds</button>
+    <button class="nav-button">Scenes</button>
+    <button class="nav-button">Fragments</button>
+    <button class="nav-button">Whispers</button>
+    <button class="nav-button">Lexicon</button>
+  </div>
+
 </body>
 </html>
